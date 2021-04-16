@@ -32,7 +32,7 @@ app.get('/api/notes/:notes', (req, res) => {
     return res.json(false);
 });
 
-app.post('api/notes', (req, res) => {
+app.post('/api/notes', (req, res) => {
     const newNote = req.body;
     newNote.routeName = newNote.title.replace(/\s+/g, '').toLowerCase();
     console.log(newNote);
