@@ -1,16 +1,22 @@
-// Dependencies
-
+const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
-
-// Sets up the Express App
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({extended: false}))
+
+// parse application/json
+app.use(bodyParser.json())
+
+require('./routes/apiRoutes.js')(app);
+require('./routes/htmlRoutes.js')(app);
+
+app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
+
+/*
 
 // DATA goes here:
 const notes = [];
@@ -40,5 +46,4 @@ app.post('/api/notes', (req, res) => {
     notes.push(newNote);
     res.json(newNote);
 });
-
-app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
+*/
