@@ -4,6 +4,9 @@
 ## Description
 This application allows the user to take notes and save the note to the backend so the user can click on the saved note to access it again.
 
+## Link to Application:
+[Click to be taken to application](https://thawing-falls-53716.herokuapp.com/)
+
 ## Preview of Application:
 ![preview screenshot](./public/assets/images/preview.gif)
 
