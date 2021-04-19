@@ -5,7 +5,7 @@
 This application allows the user to take notes and save the note to the backend so the user can click on the saved note to access it again.
 
 ## Preview of Application:
-![preview screenshot]()
+![preview screenshot](./public/assets/images/preview.gif)
 
 ## Table of Contents
 * [Intallation](#installation)

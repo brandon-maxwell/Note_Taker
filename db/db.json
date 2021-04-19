@@ -1,1 +1,7 @@
-{"title":"Get Grocieries","text":"milk\neggs\nbread","id":"8f5a0e33-6145-459f-b5e0-53703032176d"}
+[
+    {
+        "title": "Test",
+        "text": "test",
+        "id": "c14b44b0-5759-4aaa-b96a-943390bdfe08"
+    }
+]
